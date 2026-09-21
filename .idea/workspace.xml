@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a63651d2-374b-4489-a3f9-73ceee1c3c26" name="Changes" comment="simple things">
+      <change afterPath="$PROJECT_DIR$/src/routes/effect.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/DeepState.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/DeepState.svelte" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="header" />
+        <option value="counter" />
+        <option value="DeepState" />
+        <option value="string" />
+        <option value="effect" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Abdullah-Hamad-Almousa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Abdullah-Hamad-Almousa/TrainingOnSvelte.git",
+    "accountId": "19f17746-8e2a-4a0f-abc1-77928495bec3"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="3.587648495397506E-69" />
+      <entry key="MS500" value="2.0462654767281417E-14" />
+      <entry key="S2" value="3.7821734214837384E-4" />
+      <entry key="S5" value="0.04336353681503566" />
+      <entry key="S10" value="0.28261926490057854" />
+      <entry key="S30" value="3.5285737369152383" />
+      <entry key="S60" value="9.996857314867345" />
+      <entry key="M2" value="19.981102618491025" />
+      <entry key="M5" value="39.788580754546835" />
+      <entry key="M10" value="66.35127560803893" />
+      <entry key="M15" value="86.52476377875156" />
+      <entry key="M30" value="128.32862344908216" />
+      <entry key="H1" value="177.73643491505447" />
+      <entry key="H2" value="222.88486704625114" />
+      <entry key="H4" value="254.86507975969113" />
+      <entry key="D1" value="288.3868104513583" />
+      <entry key="W1" value="294.8920127066936" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000014273638" />
+      <entry key="S5" value="1.0002903526809637" />
+      <entry key="S10" value="1.0181884940609476" />
+      <entry key="S30" value="1.476727210184975" />
+      <entry key="S60" value="2.590139946157911" />
+      <entry key="M2" value="4.604864586475508" />
+      <entry key="M5" value="8.478386444052015" />
+      <entry key="M10" value="12.96628032091609" />
+      <entry key="M15" value="16.27876342657984" />
+      <entry key="M30" value="23.885335450751747" />
+      <entry key="H1" value="34.311312353753664" />
+      <entry key="H2" value="44.59289969881396" />
+      <entry key="H4" value="52.12112973957815" />
+      <entry key="D1" value="60.15814114477646" />
+      <entry key="W1" value="61.731604925640156" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.0641049700549345E-5" />
+      <entry key="MS500" value="0.10125043420402545" />
+      <entry key="S2" value="0.5644658942109496" />
+      <entry key="S5" value="0.8387559679488856" />
+      <entry key="S10" value="1.1896101349353063" />
+      <entry key="S30" value="4.933351691659309" />
+      <entry key="S60" value="12.503738843675814" />
+      <entry key="M2" value="24.499415860650505" />
+      <entry key="M5" value="48.18776088395985" />
+      <entry key="M10" value="79.24318473534089" />
+      <entry key="M15" value="102.73580263254367" />
+      <entry key="M30" value="152.1618256045352" />
+      <entry key="H1" value="212.01148204708173" />
+      <entry key="H2" value="267.455131726823" />
+      <entry key="H4" value="306.9733222995657" />
+      <entry key="D1" value="348.5425319081097" />
+      <entry key="W1" value="356.62326445890494" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3JedIwvFX9swWzY2BhmPoKO04Np" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "A:/IDE/WebStorm/svelte",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "A:\\IDE\\WebStorm\\svelte\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "A:\\IDE\\WebStorm\\svelte\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a63651d2-374b-4489-a3f9-73ceee1c3c26" name="Changes" comment="" />
+      <created>1786009612516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786009612516</updated>
+      <workItem from="1786009616020" duration="107000" />
+      <workItem from="1786989903337" duration="686000" />
+      <workItem from="1790025392657" duration="5340000" />
+    </task>
+    <task id="LOCAL-00001" summary="simple things">
+      <option name="closed" value="true" />
+      <created>1790032322681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790032322681</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="simple things" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple things" />
+  </component>
+</project>
