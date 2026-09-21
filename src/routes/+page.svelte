@@ -3,6 +3,7 @@
     import Counter from './counter.svelte'
     import DeepState from "./DeepState.svelte";
     import TestString from "./testString.svelte";
+    import Effect from "./effect.svelte";
 
 </script>
 
@@ -30,6 +31,14 @@
 
     </section>
 
+    <br>
+
+    <section class="effect">
+
+        <Effect />
+
+    </section>
+
 </main>
 
 <style>
@@ -50,6 +59,11 @@
 
     .testString{
         background: gray;
+        padding: 30px;
+    }
+
+    .effect{
+        background: darkslategray;
         padding: 30px;
     }
 

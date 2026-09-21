@@ -6,6 +6,9 @@
     function addNumber() {
         numbers.push(numbers.length + 1)
     }
+
+    $inspect(numbers).with(console.trace) //Inspecting state
+
 </script>
 
 <p>{numbers.join(' + ')} = {total}</p>
