@@ -8,6 +8,8 @@
     import DeclaringProps from './app/Props/DeclaringProps.svelte';
     import PackageInfo from './app/Props/PackageInfo.svelte';
     import IfBlock from './app/Logic/ifBlock.svelte'
+    import EachLogic from './app/Logic/eachLogic.svelte'
+    import KeyEachBlock from './app/Logic/keyEachBlock.svelte'
 
     const pkg = {
         name: 'svelte',
@@ -15,6 +17,14 @@
         description: 'blazing fast',
         website: 'https://svelte.dev'
     }
+
+    let things = $state([
+        { id: 1, nameKey: 'Apple'},
+        { id: 2, nameKey: 'Banana'},
+        { id: 3, nameKey: 'Carrot'},
+        { id: 4, nameKey: 'Doughnut'},
+        { id: 5, nameKey: 'Egg'},
+    ])
 
 </script>
 
@@ -66,6 +76,24 @@
 
     <section class="if-block">
         <IfBlock />
+    </section>
+
+    <section>
+
+        <EachLogic />
+
+    </section>
+
+    <section>
+
+        <button onclick={() => things.shift()}>
+            Remove first thing
+        </button>
+
+        {#each things as thing (thing.id)}
+            <KeyEachBlock nameKey={thing.nameKey} />
+        {/each}
+
     </section>
 
 </main>
