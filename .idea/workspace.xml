@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a63651d2-374b-4489-a3f9-73ceee1c3c26" name="Changes" comment="adding universal counter to the app">
-      <change afterPath="$PROJECT_DIR$/src/routes/app/DeclaringProps.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/app/PackageInfo.svelte" afterDir="false" />
+    <list default="true" id="a63651d2-374b-4489-a3f9-73ceee1c3c26" name="Changes" comment="Starting on props declaring and package data">
+      <change afterPath="$PROJECT_DIR$/src/routes/app/Logic/ifBlock.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/DeclaringProps.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/Props/DeclaringProps.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/DeepState.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/Reactivity/DeepState.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/PackageInfo.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/Props/PackageInfo.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/UniversalCounter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/Reactivity/UniversalCounter.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/counter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/Reactivity/counter.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/effect.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/Props/effect.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/scripts/counter.svelte.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/Reactivity/scripts/counter.svelte.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app/testString.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/app/Reactivity/testString.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +34,7 @@
         <option value="TypeScript File" />
         <option value="DeclaringProps" />
         <option value="PackageInfo" />
+        <option value="ifBlock" />
       </list>
     </option>
   </component>
@@ -51,61 +59,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000679948176" />
-      <entry key="MS500" value="1.0379428938344393" />
-      <entry key="S2" value="1.6660501585791616" />
-      <entry key="S5" value="2.654046737090315" />
-      <entry key="S10" value="3.480752978179092" />
-      <entry key="S30" value="4.382320177839588" />
-      <entry key="S60" value="4.76221654999507" />
-      <entry key="M2" value="6.978891273222559" />
-      <entry key="M5" value="23.46059255190598" />
-      <entry key="M10" value="47.754849676082216" />
-      <entry key="M15" value="64.56572497399168" />
-      <entry key="M30" value="105.60851512867256" />
-      <entry key="H1" value="177.54922188234158" />
-      <entry key="H2" value="268.2710740907369" />
-      <entry key="H4" value="347.0516465457438" />
-      <entry key="D1" value="442.4960726637636" />
-      <entry key="W1" value="462.5373995716969" />
+      <entry key="MS100" value="1.0041473854785168" />
+      <entry key="MS500" value="1.5942595567921534" />
+      <entry key="S2" value="3.9498134868394463" />
+      <entry key="S5" value="7.246824236957621" />
+      <entry key="S10" value="10.509089281055244" />
+      <entry key="S30" value="15.502378395433675" />
+      <entry key="S60" value="18.632143974365718" />
+      <entry key="M2" value="25.184079272168137" />
+      <entry key="M5" value="44.364147842697584" />
+      <entry key="M10" value="71.47007750542309" />
+      <entry key="M15" value="93.43008936359574" />
+      <entry key="M30" value="144.28507899846508" />
+      <entry key="H1" value="224.17698375852257" />
+      <entry key="H2" value="324.31805933335215" />
+      <entry key="H4" value="413.00720851388036" />
+      <entry key="D1" value="522.6583475583711" />
+      <entry key="W1" value="545.964086096034" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.7180505292725147E-298" />
-      <entry key="S2" value="4.060358511536229E-75" />
-      <entry key="S5" value="1.751635716641588E-30" />
-      <entry key="S10" value="1.331996030679616E-15" />
-      <entry key="S30" value="1.3029900008211919E-5" />
-      <entry key="S60" value="0.004833576891715666" />
-      <entry key="M2" value="0.10790291648566051" />
-      <entry key="M5" value="0.9842687964164935" />
-      <entry key="M10" value="2.6019797556785904" />
-      <entry key="M15" value="4.06315626979954" />
-      <entry key="M30" value="9.625891076416318" />
-      <entry key="H1" value="22.56705252985109" />
-      <entry key="H2" value="40.717837093751754" />
-      <entry key="H4" value="57.24841951089452" />
-      <entry key="D1" value="77.85297566366515" />
-      <entry key="W1" value="82.24017040875627" />
+      <entry key="MS500" value="3.688776367152066E-151" />
+      <entry key="S2" value="2.4647494192125444E-38" />
+      <entry key="S5" value="9.50562415467047E-16" />
+      <entry key="S10" value="4.24883207034268E-8" />
+      <entry key="S30" value="0.009654175534516108" />
+      <entry key="S60" value="0.27490798024092933" />
+      <entry key="M2" value="1.7615283223081923" />
+      <entry key="M5" value="6.323723792240319" />
+      <entry key="M10" value="10.6754558401328" />
+      <entry key="M15" value="13.425277444993483" />
+      <entry key="M30" value="20.103065756134953" />
+      <entry key="H1" value="33.31123728791202" />
+      <entry key="H2" value="52.29511756547887" />
+      <entry key="H4" value="70.20222624196172" />
+      <entry key="D1" value="93.16906983689373" />
+      <entry key="W1" value="98.13706356258861" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.3950206757306501" />
-      <entry key="MS500" value="0.859513418024898" />
-      <entry key="S2" value="1.526360213938145" />
-      <entry key="S5" value="2.5004121812669853" />
-      <entry key="S10" value="3.3572335947553866" />
-      <entry key="S30" value="4.3233664435283545" />
-      <entry key="S60" value="4.7337825374996045" />
-      <entry key="M2" value="7.062029080181121" />
-      <entry key="M5" value="24.411824223125056" />
-      <entry key="M10" value="50.321048963082056" />
-      <entry key="M15" value="68.59518329098167" />
-      <entry key="M30" value="115.20355014938936" />
-      <entry key="H1" value="200.08713225912754" />
-      <entry key="H2" value="308.9654501540424" />
-      <entry key="H4" value="404.2844592652072" />
-      <entry key="D1" value="520.3456648722854" />
-      <entry key="W1" value="544.7770631848314" />
+      <entry key="MS100" value="0.9834240900784766" />
+      <entry key="MS500" value="1.5858029432443566" />
+      <entry key="S2" value="3.943773280095161" />
+      <entry key="S5" value="7.236378354158078" />
+      <entry key="S10" value="10.486725823313577" />
+      <entry key="S30" value="15.485786749398203" />
+      <entry key="S60" value="18.90926756465847" />
+      <entry key="M2" value="27.07771886320912" />
+      <entry key="M5" value="51.13280477045622" />
+      <entry key="M10" value="82.80210123872713" />
+      <entry key="M15" value="107.6031755060563" />
+      <entry key="M30" value="165.24045778913236" />
+      <entry key="H1" value="258.39856383079297" />
+      <entry key="H2" value="377.55846330353444" />
+      <entry key="H4" value="484.1777036077399" />
+      <entry key="D1" value="616.8212290186941" />
+      <entry key="W1" value="645.1002383169182" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -146,6 +154,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\IDE\WebStorm\svelte\src\routes\app\Reactivity" />
+      <recent name="A:\IDE\WebStorm\svelte\src\routes\app\Props" />
       <recent name="A:\IDE\WebStorm\svelte\src\routes\app" />
     </key>
   </component>
@@ -167,7 +177,7 @@
       <workItem from="1786989903337" duration="686000" />
       <workItem from="1790025392657" duration="5340000" />
       <workItem from="1790033542750" duration="552000" />
-      <workItem from="1790038008203" duration="3664000" />
+      <workItem from="1790038008203" duration="4634000" />
     </task>
     <task id="LOCAL-00001" summary="simple things">
       <option name="closed" value="true" />
@@ -185,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790038911989</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Starting on props declaring and package data">
+      <option name="closed" value="true" />
+      <created>1790043969445</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790043969445</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simple things" />
     <MESSAGE value="adding universal counter to the app" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding universal counter to the app" />
+    <MESSAGE value="Starting on props declaring and package data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting on props declaring and package data" />
   </component>
 </project>

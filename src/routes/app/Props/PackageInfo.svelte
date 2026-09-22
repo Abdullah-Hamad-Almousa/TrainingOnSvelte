@@ -5,6 +5,9 @@
 	//Or on this way
 	//let { name, version, description, website } = $props();
 
+	//This is for tracing our objects
+	console.log(stuff.name, stuff.version, stuff.description, stuff.website);
+
 </script>
 
 <p>
