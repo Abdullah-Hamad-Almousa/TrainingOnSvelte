@@ -1,0 +1,17 @@
+<script lang="ts">
+
+	import { roll } from './script/utility.ts'
+
+	let promise = $state(roll())
+
+</script>
+
+<button onclick={() => promise = roll()}> roll the dice </button>
+
+{#await promise}
+	<p>...rolling</p>
+{:then number}
+	<p>you rolled a {number}!</p>
+{:catch error}
+	<p style="color: #bc9090">{error.message}</p>
+{/await}

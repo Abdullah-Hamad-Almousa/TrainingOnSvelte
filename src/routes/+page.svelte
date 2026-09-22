@@ -10,6 +10,7 @@
     import IfBlock from './app/Logic/ifBlock.svelte'
     import EachLogic from './app/Logic/eachLogic.svelte'
     import KeyEachBlock from './app/Logic/keyEachBlock.svelte'
+    import Await from './app/Logic/await.svelte'
 
     const pkg = {
         name: 'svelte',
@@ -84,7 +85,7 @@
 
     </section>
 
-    <section>
+    <section class="key-each-block counter-row">
 
         <button onclick={() => things.shift()}>
             Remove first thing
@@ -96,9 +97,25 @@
 
     </section>
 
+    <section class="await">
+        <Await />
+    </section>
+
 </main>
 
 <style>
+
+    .await {
+        background: darkslategray;
+        padding: 1px;
+        padding-left: 30px
+    }
+
+    .key-each-block {
+        background: aqua;
+        padding: 1px;
+        padding-left: 30px
+    }
 
     .if-block {
         background: #dd3737;

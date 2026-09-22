@@ -8,9 +8,9 @@
 		Egg: '🥚'
 	};
 
-	let { nameKey } = $props();
+	let { nameKey } = $props()
 
-	const emoji = emojis[nameKey];
+	const emoji = emojis[nameKey]
 
 </script>
 
