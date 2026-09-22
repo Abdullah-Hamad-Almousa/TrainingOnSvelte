@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 
-    import Counter from './counter.svelte'
-    import DeepState from "./DeepState.svelte";
-    import TestString from "./testString.svelte";
-    import Effect from "./effect.svelte";
+    import Counter from './app/counter.svelte'
+    import DeepState from "./app/DeepState.svelte"
+    import TestString from "./app/testString.svelte"
+    import Effect from "./app/effect.svelte"
+    import UniCounter from "./app/UniversalCounter.svelte"
 
 </script>
 
@@ -17,7 +18,7 @@
 
     <br>
 
-    <section class="deepState">
+    <section class="deep-state">
 
         <DeepState />
 
@@ -25,7 +26,7 @@
 
     <br>
 
-    <section class="testString">
+    <section class="test-string">
 
         <TestString ./>
 
@@ -36,6 +37,12 @@
     <section class="effect">
 
         <Effect />
+
+    </section>
+
+    <section class="uni-counter">
+
+        <UniCounter /> <UniCounter /> <UniCounter />
 
     </section>
 
@@ -52,12 +59,12 @@
         padding: 30px;
     }
 
-    .deepState {
+    .deep-state {
         background: #f8e32d;
         padding: 30px;
     }
 
-    .testString{
+    .test-string{
         background: gray;
         padding: 30px;
     }
