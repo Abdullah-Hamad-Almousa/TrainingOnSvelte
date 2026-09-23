@@ -12,6 +12,8 @@
     import KeyEachBlock from './app/Logic/keyEachBlock.svelte'
     import Await from './app/Logic/await.svelte'
     import DOMEvent from './app/Events/DOMEvent.svelte';
+    import Capturing from './app/Events/Capturing.svelte';
+    import ComponentEvents from './app/Events/ComponentEvents.svelte';
 
     const pkg = {
         name: 'svelte',
@@ -19,6 +21,8 @@
         description: 'blazing fast',
         website: 'https://svelte.dev'
     }
+
+    let value = $state(0)
 
     let things = $state([
         { id: 1, nameKey: 'Apple'},
@@ -32,43 +36,43 @@
 
 <main>
 
-    <section class="counter">
+    <section class="domEvent">
 
         <Counter />
 
     </section>
 
-    <section class="deep-state">
+    <section class="await">
 
         <DeepState />
 
     </section>
 
-    <section class="test-string">
+    <section class="domEvent">
 
         <TestString ./>
 
     </section>
 
-    <section class="effect">
+    <section class="await">
 
         <Effect />
 
     </section>
 
-    <section class="uni-counter">
+    <section class="domEvent">
 
         <UniCounter /> <UniCounter /> <UniCounter />
 
     </section>
 
-    <section class="declaring-props">
+    <section class="await">
 
         <div class="counter-row"><DeclaringProps answer={42} /> <DeclaringProps/></div>
 
     </section>
 
-    <section class="package-info">
+    <section class="domEvent">
 
         <PackageInfo {...pkg}
 
@@ -76,7 +80,7 @@
 
     </section>
 
-    <section class="if-block">
+    <section class="await">
         <IfBlock />
     </section>
 
@@ -86,7 +90,7 @@
 
     </section>
 
-    <section class="key-each-block counter-row">
+    <section class="domEvent counter-row">
 
         <button onclick={() => things.shift()}>
             Remove first thing
@@ -106,6 +110,18 @@
         <DOMEvent />
     </section>
 
+    <section class="await">
+        <Capturing />
+    </section>
+
+    <section class="domEvent">
+        <ComponentEvents
+          increment={() => value += 1}
+          decrement={() => value -= 1}
+        />
+        <p>The current value is {value}</p>
+    </section>
+
 </main>
 
 <style>
@@ -122,18 +138,6 @@
         padding-left: 30px
     }
 
-    .key-each-block {
-        background: aqua;
-        padding: 1px;
-        padding-left: 30px
-    }
-
-    .if-block {
-        background: #dd3737;
-        padding: 1px;
-        padding-left: 30px
-    }
-
     main {
         display: flex;
         flex-direction: column;
@@ -144,52 +148,10 @@
         background: #882233;
     }
 
-    .counter {
-        background: aqua;
-        padding: 1px;
-        padding-left: 30px
-    }
-
-    .deep-state {
-        background: #f8e32d;
-        padding: 1px;
-        padding-left: 30px
-    }
-
-    .test-string{
-        background: gray;
-        padding: 1px;
-        padding-left: 30px
-    }
-
-    .effect{
-        background: darkslategray;
-        padding: 1px;
-        padding-left: 30px
-    }
-
-    .uni-counter{
-        background: #76ba67;
-        padding: 1px;
-        padding-left: 30px
-    }
-
-    .declaring-props{
-        background: #efeff1;
-        padding: 1px;
-        padding-left: 30px
-    }
-
     .counter-row{
         display: flex;
         align-items: center;
         gap: 2rem;
-    }
-
-    .package-info{
-        background: #9191f1;
-        padding: 1px;
-        padding-left: 30px
     }
 
 </style>

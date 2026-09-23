@@ -1,31 +1,32 @@
 <script lang="ts">
-
-	let showPointerPosition = $state(true)
-	let m = $state({ x: 0, y: 0 })
+	let showPointerPosition = $state(true);
+	let m = $state({ x: 0, y: 0 });
 
 	function onPointerMove(e: PointerEvent) {
-		m.x = e.clientX
-		m.y = e.clientY
+		m.x = e.clientX;
+		m.y = e.clientY;
 	}
 
 	function togglePointerPosition() {
-		showPointerPosition = !showPointerPosition
+		showPointerPosition = !showPointerPosition;
 	}
-
 </script>
 
+<svelte:window onpointermove={onPointerMove} />
+
 <button onclick={togglePointerPosition}>
-	{showPointerPosition ? 'Hide Pointer Postion' : 'Show Pointer Position'}
+	{showPointerPosition ? 'Hide Pointer Position' : 'Show Pointer Position'}
 </button>
 
-<div onpointermove={onPointerMove} role="presentation">
-	{#if showPointerPosition}
-		The Pointer is at {Math.round(m.x)} x {Math.round(m.y)}
-	{/if}
-</div>
+{#if showPointerPosition}
+	<div class="pointer-area" onpointermove={onPointerMove} role="presentation">
 
+		The Pointer is at {Math.round(m.x)} x {Math.round(m.y)}
+
+	</div>
+{/if}
 <style>
-    div {
+    .pointer-area {
         position: fixed;
         left: 0;
         top: 0;
@@ -35,9 +36,8 @@
 				pointer-events: none;
     }
 
-		button {
-				position: relative;
-				z-index: 1;
-		}
-
+    button {
+        position: relative;
+        z-index: 1;
+    }
 </style>
