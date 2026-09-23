@@ -14,6 +14,7 @@
     import DOMEvent from './app/Events/DOMEvent.svelte';
     import Capturing from './app/Events/Capturing.svelte';
     import ComponentEvents from './app/Events/ComponentEvents.svelte';
+    import SpreadingEvents from './app/Events/SpreadingEvents.svelte';
 
     const pkg = {
         name: 'svelte',
@@ -120,6 +121,10 @@
           decrement={() => value -= 1}
         />
         <p>The current value is {value}</p>
+    </section>
+
+    <section class="await">
+        <SpreadingEvents />
     </section>
 
 </main>
