@@ -11,6 +11,7 @@
     import EachLogic from './app/Logic/eachLogic.svelte'
     import KeyEachBlock from './app/Logic/keyEachBlock.svelte'
     import Await from './app/Logic/await.svelte'
+    import DOMEvent from './app/Events/DOMEvent.svelte';
 
     const pkg = {
         name: 'svelte',
@@ -101,9 +102,19 @@
         <Await />
     </section>
 
+    <section class="domEvent">
+        <DOMEvent />
+    </section>
+
 </main>
 
 <style>
+
+    .domEvent {
+        background: #4c2f4f;
+        padding: 1px;
+        padding-left: 30px
+    }
 
     .await {
         background: darkslategray;
